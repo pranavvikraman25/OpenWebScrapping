@@ -6,6 +6,7 @@
   },
   "routes": [
     { "src": "^/api/(.*)", "dest": "/backend/main.py" },
-    { "src": "/(.*)", "dest": "/frontend/dist/$1" }
-  ]
+    { "src": "/(.*)", "dest": "/public/$1" }
+  ],
+  "outputDirectory": "public"
 }

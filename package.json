@@ -2,6 +2,6 @@
   "private": true,
   "scripts": {
     "install": "npm --prefix frontend install",
-    "build": "npm --prefix frontend run build"
+    "build": "npm --prefix frontend run build && node copy-build.js"
   }
 }
