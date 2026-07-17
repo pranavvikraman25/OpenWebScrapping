@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "backend/**/*.py": {
+      "runtime": "python3.11"
+    }
+  },
+  "routes": [
+    { "src": "^/api/(.*)", "dest": "/backend/main.py" },
+    { "src": "/(.*)", "dest": "/frontend/dist/$1" }
+  ]
+}
