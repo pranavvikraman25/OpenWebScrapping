@@ -5,6 +5,7 @@ if sys.platform == 'win32':
     asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
 
 import os
+os.environ["PLAYWRIGHT_BROWSERS_PATH"] = "0"
 import re
 import json
 import datetime
