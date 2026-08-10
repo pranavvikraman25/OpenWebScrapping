@@ -10,4 +10,5 @@ elif [ -f "../requirements.txt" ]; then
     pip install -r ../requirements.txt
 fi
 
-playwright install --with-deps chromium
+# Install Chromium browser binary (without requiring root/sudo permissions)
+playwright install chromium
