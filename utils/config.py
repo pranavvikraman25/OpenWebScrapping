@@ -1,4 +1,7 @@
-from pydantic import BaseSettings
+try:
+    from pydantic import BaseSettings
+except ImportError:
+    from pydantic.v1 import BaseSettings
 
 class Settings(BaseSettings):
     """Application configuration loaded from environment variables or .env file."""

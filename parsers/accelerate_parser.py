@@ -1,4 +1,4 @@
-// parsers/accelerate_parser.py
+# parsers/accelerate_parser.py
 import bs4
 from typing import List
 
